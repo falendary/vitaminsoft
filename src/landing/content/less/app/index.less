@@ -7,6 +7,10 @@
   src: url("../fonts/FiraSans-Medium.ttf");
 }
 @font-face {
+  font-family: "Fira-sans light";
+  src: url("../fonts/FiraSans-Light.ttf");
+}
+@font-face {
   font-family: "AlegreyaSans bold";
   src: url("../fonts/AlegreyaSans-Bold.ttf");
 }
@@ -78,7 +82,8 @@ header {
     &:hover {
       text-decoration: none;
       color: #fff;
-      background: url('../img/log-in-hover.png') no-repeat;
+      background: url('../img/log-in-hover.png') no-repeat center;
+      .background-size(100% 100%);
     }
   }
 }
@@ -269,11 +274,11 @@ footer {
   }
 }
 .get-in-touch {
-    text-align: center;
-    font-size: 2em;
-    margin-bottom: 1em;
-    color: #948a7c;
-  }
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 1em;
+  color: #948a7c;
+}
 .register-btn {
   background: url('../img/btn-sign-up.png') no-repeat;
   width: 305px;
