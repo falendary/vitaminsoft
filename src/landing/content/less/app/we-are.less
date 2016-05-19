@@ -1,0 +1,106 @@
+.team-member {
+  float: left;
+  width: 108px;
+  &.columed {
+    float: none;
+  }
+  &.centered {
+    float: none;
+    margin: 0 auto;
+  }
+  &.vacant {
+    .team-card {
+      background-image: url('../img/vacant-place.png');
+      background-repeat: no-repeat;
+      background-position: 50%;
+    }
+  }
+  .team-card {
+    width: 108px;
+    height: 150px;
+    border: 2px solid #dcdcdc;
+    background-image: url('../img/guy-green-shirt.png');
+    background-repeat: no-repeat;
+  }
+  &.big {
+    width: 218px;
+    .team-card {
+      width: 218px;
+      height: 308px;
+      background-image: url('../img/guy-orange-shirt.png');
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.team-big-logo {
+  float: left;
+  position: relative;
+  left: -25px;
+}
+
+.team {
+  margin-bottom: 2em;
+}
+
+.team-member-wrapper {
+  float: left;
+}
+
+.team-member.centered {
+  float: none;
+  margin: 0 95px 0;
+}
+
+.row.team.first {
+  .team-member {
+    margin-right: 3em;
+    margin-left: 3em;
+    margin-top: 440px;
+  }
+  .team-member.big {
+    margin: 0;
+  }
+}
+
+.row.team.second {
+  .team-member-wrapper:first-of-type {
+    margin-left: 107px;
+  }
+  .team-member-wrapper:last-child {
+    float: right;
+    margin-right: 152px;
+  }
+  .team-member-wrapper.centered {
+    padding-left: 45px;
+    .team-m-right {
+      margin-right: 170px;
+    }
+  }
+}
+
+.row.team.third {
+  .team-member-wrapper {
+    margin-left: 45px;
+  }
+  .team-member-wrapper:first-of-type {
+    margin-left: 107px;
+  }
+  .team-member-wrapper:last-child {
+    float: right;
+    margin-right: 152px;
+  }
+}
+
+.row.team.forth {
+  .team-member-wrapper {
+    margin-left: 45px;
+  }
+  .team-member-wrapper:first-of-type {
+    margin-left: 107px;
+  }
+  .team-member-wrapper:last-child {
+    float: right;
+    margin-right: 152px;
+  }
+}

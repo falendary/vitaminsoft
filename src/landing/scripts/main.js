@@ -24,4 +24,9 @@ $(document).ready(function() {
 			$(tab).toggleClass('taboo-active-img hide');
 		}
 	})
+
+
+
+
+
 });

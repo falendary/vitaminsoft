@@ -105,12 +105,12 @@
     });
 
     gulp.task(appName + '-min-All', [
-        appName + '-HTML-to-JS',
         appName + '-html-min',
         appName + '-less-to-css-min',
         appName + '-js-min',
         appName + '-img-copy',
-        appName + '-fonts-copy',
-        appName + '-data-copy']);
+        appName + '-fonts-copy'
+        // appName + '-data-copy'
+        ]);
 
 }());

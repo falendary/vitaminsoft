@@ -37,7 +37,7 @@
                     <li><a href="are.html">WE ARE</a></li>
                 </ul>
             </nav>
-            <a href="#" class="get-in-touch">GET IN TOUCH</a>
+            <a href="#" class="get-in-touch" data-toggle="modal" data-target="#launchModal">LAUNCH PROJECT</a>
         </div>
     </div>
 </header>
@@ -305,9 +305,39 @@
         </div>
     </div>
 </footer>
-
+<div class="modal fade" tabindex="-1" role="dialog" id="launchModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header" style="border-bottom: 0">
+                <a href="index.html">
+                    <img src="landing/content/img/logo.png" alt="" style="height: 40px;">
+                </a>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+                <img src="landing/content/img/logo-till-launch.png" alt="">
+                <h3>The path of your project starts here</h3>
+                <p>
+                    Please write anything important about your project<br/>
+                    or ideas best way you can, and tell us how we can<br/>
+                    contact you for reply.
+                </p>
+                <div class="form-group">
+                    <label for="">Your phone number or email</label>
+                    <input type="text" class="form-control" placeholder="Betacarotine@mail.com">
+                    <label for="">What do you want to do?</label>
+                    <textarea name="" id="" class="form-control" cols="30" rows="10"></textarea>
+                    <a href="#" class="register-btn">Submit request</a>
+                    <p class="sign-up-caption">We do not send spam and you could cancel
+                        recieving our emails at any time</p>
+                </div>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 <script src="core/scripts/corejs.min.js"></script>
 <script src="core/scripts/jquery.min.js"></script>
 <script src="core/scripts/bootstrap.min.js"></script>
+<script src="landing/scripts/main.min.js"></script>
 </body>
 </html>

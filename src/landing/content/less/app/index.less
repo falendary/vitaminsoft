@@ -279,7 +279,7 @@ footer {
 }
 .get-in-touch {
   text-align: center;
-  font-size: 2em;
+  font-size: 1em;
   margin-bottom: 1em;
   color: #948a7c;
 }
@@ -297,5 +297,40 @@ footer {
   &:hover {
     text-decoration: none;
     background: url('../img/btn-sign-up-hover.png') no-repeat;
+  }
+}
+
+#launchModal {
+  .modal-dialog {
+    width: 460px;
+  }
+  h3 {
+    font-weight: bold;
+    font-family: "AlegreyaSans bold";
+  }
+  input {
+    margin-bottom: 1em;
+    width: 70%;
+  }
+  p {
+    font-family: "Fira-sans regular";
+  }
+  textarea {
+    height: 100px;
+    max-width: 402px;
+  }
+  label {
+    color: #948a7c;
+    font-family: "Fira-sans regular";
+  }
+  .sign-up-caption {
+    color: #948a7c;
+    width: 60%;
+  }
+  .form-control {
+    border-color: #948a7c;
+    &:focus {
+      border-color: #006cc0;
+    }
   }
 }
