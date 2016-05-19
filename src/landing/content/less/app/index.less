@@ -7,6 +7,10 @@
   src: url("../fonts/FiraSans-Medium.ttf");
 }
 @font-face {
+  font-family: "Fira-sans light";
+  src: url("../fonts/FiraSans-Light.ttf");
+}
+@font-face {
   font-family: "AlegreyaSans bold";
   src: url("../fonts/AlegreyaSans-Bold.ttf");
 }
@@ -78,7 +82,8 @@ header {
     &:hover {
       text-decoration: none;
       color: #fff;
-      background: url('../img/log-in-hover.png') no-repeat;
+      background: url('../img/log-in-hover.png') no-repeat center;
+      .background-size(100% 100%);
     }
   }
 }
@@ -235,7 +240,7 @@ footer {
 
 .phone-form {
   height: 521px;
-  width: 369px;
+  width: 375px;
   position: relative;
   bottom: -225px;
   padding-top: 12em;
@@ -244,12 +249,6 @@ footer {
   z-index: 10;
   margin: 0 auto;
   background: #fff url('../img/phone_star.png') no-repeat;
-  .get-in-touch {
-    text-align: center;
-    font-size: 2em;
-    margin-bottom: 1em;
-    color: #948a7c;
-  }
   label {
     color: #948a7c;
   }
@@ -263,22 +262,6 @@ footer {
     color: #948a7c;
     margin-top: 1em;
   }
-  .register-btn {
-    background: url('../img/btn-sign-up.png') no-repeat;
-    width: 305px;
-    display: block;
-    height: 97px;
-    margin-top: 1em;
-    text-align: center;
-    color: #22190c;
-    font-weight: bold;
-    font-size: 1.3em;
-    padding-top: 2em;
-    &:hover {
-      text-decoration: none;
-      background: url('../img/btn-sign-up-hover.png') no-repeat;
-    }
-  }
   &::before {
     content: '';
     display: block;
@@ -288,5 +271,62 @@ footer {
     top: -90px;
     background: url('../img/d_star.png') no-repeat;
     left: -73px;
+  }
+}
+.get-in-touch {
+  text-align: center;
+  font-size: 1em;
+  margin-bottom: 1em;
+  color: #948a7c;
+}
+.register-btn {
+  background: url('../img/btn-sign-up.png') no-repeat;
+  width: 305px;
+  display: block;
+  height: 97px;
+  margin-top: 1em;
+  text-align: center;
+  color: #22190c;
+  font-weight: bold;
+  font-size: 1.3em;
+  padding-top: 2em;
+  &:hover {
+    text-decoration: none;
+    background: url('../img/btn-sign-up-hover.png') no-repeat;
+  }
+}
+
+#launchModal {
+  .modal-dialog {
+    width: 460px;
+  }
+  h3 {
+    font-weight: bold;
+    font-family: "AlegreyaSans bold";
+  }
+  input {
+    margin-bottom: 1em;
+    width: 70%;
+  }
+  p {
+    font-family: "Fira-sans regular";
+  }
+  textarea {
+    height: 100px;
+    max-width: 402px;
+  }
+  label {
+    color: #948a7c;
+    font-family: "Fira-sans regular";
+  }
+  .sign-up-caption {
+    color: #948a7c;
+    width: 60%;
+  }
+  .form-control {
+    border-color: #948a7c;
+    &:focus {
+      border-color: #006cc0;
+    }
   }
 }

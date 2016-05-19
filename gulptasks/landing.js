@@ -100,7 +100,6 @@
     });
 
     gulp.task(appName + '-min-All', [
-        appName + '-HTML-to-JS',
         appName + '-html-min',
         appName + '-less-to-css-min',
         appName + '-js-min',
