@@ -1,3 +1,6 @@
+.container {
+  min-width: 1170px !important;
+}
 @font-face {
   font-family: "Fira-sans regular";
   src: url("../fonts/FiraSans-Regular.ttf");
@@ -16,6 +19,10 @@
 }
 body {
   font-family: "Fira-sans regular";
+}
+.white-logos {
+  position: relative;
+  top: -140px;
 }
 section.section-orange {
   background: #f6692c;
@@ -38,7 +45,12 @@ section.section-orange {
   .col-brand {
     margin-left: 5%;
     display: inline-block;
-    margin-right: 5%;
+    margin-right: 0%;
+  }
+  .col-brand.top-positioned {
+    position: relative;
+    top: -90px;
+    margin-right: 0;
   }
 }
 section.section-could-do {
