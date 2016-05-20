@@ -36,11 +36,14 @@
 	left: 13%;
 	top: 14%;
 }
-.cyantra-main-h {
-	color: #ffffff;
+.tabs-main-h {
 	font-family: "AlegreyaSans bold";
 	font-size: 3rem;
-	margin-top: 0;
+	margin-top: 0;	
+}
+.cyantra-main-h {
+	color: #ffffff;
+	.tabs-main-h;
 }
 .cyantra-main-p {
 	color: #ffffff;
@@ -135,15 +138,38 @@
 .taboo-main-p {
 	.cyantra-main-p;
 }
+.taboo-tab-btn {
+	opacity: 0.6;
+	.taboo-small-header {
+		text-decoration: underline;
+	}
+}
+.taboo-tab-btn.taboo-btn-active {
+	opacity: 1;
+	.taboo-small-header {
+		text-decoration: none;
+	}
+}
 .taboo-tab-btn:hover, .taboo-tab-btn:focus {
 	text-decoration: none;
 }
+
 .taboo-left-text {
 	display: block;
 	position: absolute;
 	width: 25rem;
-	bottom: 28%;
-	left: 5%;
+    bottom: 30%;
+    left: 11%;
+}
+.taboo-left-text.taboo-btn-active:after {
+	content: '';
+	display: block;
+	position: absolute;
+	background: url(../img/taboo-filter-line.png) center no-repeat;
+	width: 19rem;
+	height: 7rem;
+	left: 14.3rem;
+	bottom: 8rem;
 }
 .taboo-right-top-text {
 	display: block;
@@ -152,12 +178,33 @@
 	right: 11%;
 	top: 11%;
 }
+.taboo-right-top-text.taboo-btn-active:after {
+	content: '';
+	display: block;
+	position: absolute;
+	background: url(../img/taboo-satellite-line.png) center no-repeat;
+	width: 20rem;
+	height: 20rem;
+	top: -1rem;
+    right: 24rem;
+}
 .taboo-right-bottom-text {
 	display: block;
 	position: absolute;
 	width: 27rem;
 	right: 11%;
-	bottom: 13%;
+	bottom: 16%;
+}
+.taboo-right-bottom-text.taboo-btn-active:after {
+	content: '';
+	display: block;
+	position: absolute;
+	background: url(../img/taboo-people-line.png) center no-repeat;
+	width: 25rem;
+	height: 11rem;
+	bottom: 19rem;
+	right: 28rem;
+	.background-size(100% 100%);
 }
 .taboo-small-header {
 	color: #ffffff;
@@ -170,4 +217,69 @@
 }
 .tab-taboo-img-2 {
 	.tab-taboo-img-1;
+}
+.tab-taboo-img-2 {
+	.tab-taboo-img-1;
+}
+.did-tab-3 {
+	.did-tab-mixin;
+	background-color: #ffb650;
+	p {
+		color: #000000;
+	}
+	h4 {
+		color: #000000;
+		font-family: "Fira-sans bold";
+	}
+}
+.safelagoon-img {
+	.tab-taboo-img-1;
+}
+.safelagoon-main-h {
+	position: absolute;
+	.tabs-main-h;
+	color: #000000;
+	width: 38rem;
+	left: 12%;
+	top: 17%;
+}
+.safelagoon-btn {
+	position: absolute;
+	display: block;
+	pointer-events: none;
+	opacity: 0.6;
+	.safelagoon-small-h {
+		text-decoration: underline;
+	}
+}
+.safelagoon-btn.safelagoon-btn-active {
+	opacity: 1;
+	.safelagoon-small-h {
+		text-decoration: none;
+	}
+}
+.safelagoon-left-middle {
+	width: 23rem;
+	top: 40%;
+	left: 12%;
+}
+.safelagoon-left-bottom {
+	width: 25rem;
+	bottom: 18%;
+    left: 15%;
+}
+.safelagoon-right-top {
+	width: 20rem;
+    top: 14%;
+    right: 15%;
+}
+.safelagoon-right-middle {
+	width: 20rem;
+    top: 40%;
+    right: 12%
+}
+.safelagoon-right-bottom {
+    width: 20rem;
+    bottom: 18%;
+    right: 15%;
 }
